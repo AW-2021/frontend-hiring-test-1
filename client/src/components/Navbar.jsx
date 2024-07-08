@@ -1,7 +1,10 @@
+import logoImage from '../assets/TTLogo.png'
+
 const Navbar = (props) => {
     return (
-      <div>
-        <h1>{props.listName}</h1>
+      <div className="navbar">
+        <img id="logo-img" src={logoImage} alt="logo" />
+        <button type="button" id="logout-btn">Log out</button>
       </div>
     );
   }

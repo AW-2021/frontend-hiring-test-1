@@ -1,26 +1,82 @@
+:root {
+  --neutral-600: #888b94;
+  --neutral-800: #14192b;
+  --primary-1: #0144e4;
+  --neutral-200: #f7f8fa;
+  --bg-neutral-100: white;
+  --neutral-700: #4b5166;
+  --neutral-500: #b8bac3;
+  --neutral-400: #d8dae3;
+  --neutral-300: #e9eaf0;
+  --tt-blue: #4f46f8;
+}
+
 @font-face {
   font-family: 'Avenir Black';
-  src: url('../../design-files/font/AvenirLTStd-Black.otf') format('opentype');
+  src: url('./assets/font/AvenirLTStd-Black.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Avenir Book';
-  src: url('../../design-files/font/AvenirLTStd-Book.otf') format('opentype');
+  src: url('./assets/font/AvenirLTStd-Book.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Avenir Roman';
-  src: url('../../design-files/font/AvenirLTStd-Roman.otf') format('opentype');
+  src: url('./assets/font/AvenirLTStd-Roman.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
-body {
+
+
+*, ::before, ::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Avenir Roman', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Avenir Book','Avenir Roman', sans-serif;
+}
+
+.navbar {
+  max-width: 90vw;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:20px auto;
+  padding: 1em;
+  border: 1px solid gainsboro;
+}
+
+#logo-img {
+  height: 100%;
+}
+
+#logout-btn {
+  color: white;
+  background-color: var(--tt-blue);
+  border: none;
+  padding: 0.7em;
+  width: 120px;
+  border-radius: 3px;
+  font-family: 'Avenir Roman';
+  font-size: 1em;
+}
+.main-section {
+  width: 85vw;
+  margin: 40px auto;
+}
+
+#title {
+  font-family: 'Avenir Roman';
+  font-weight: normal;
 }

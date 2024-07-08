@@ -1,7 +1,10 @@
 const ListHeader = () => {
+    const tableHeader = ['calltype', 'direction', 'duration', 'from', 'to', 'via'];
+
     return (
-      <div>
-      </div>
+      <tr>
+        {tableHeader.map(el => <th>{el}</th>)}
+      </tr>
     );
   }
   
